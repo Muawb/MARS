@@ -14,7 +14,6 @@ public class Turntable implements AutoCloseable{
     private Player pl;
 
     public Turntable(String path){
-        log.info("initializing");
         try {
             InputStream in = this.getClass().getResourceAsStream(path);
             pl = new Player(in);
@@ -27,7 +26,7 @@ public class Turntable implements AutoCloseable{
 
     public void play() throws JavaLayerException {
         pl.play();
-        log.info("Run the audio file");
+        log.info("Sound start !");
     }
 
     public boolean isActive(){
@@ -39,5 +38,6 @@ public class Turntable implements AutoCloseable{
         if (pl != null | pl == null){
             pl.close();
         }
+        log.info("Sound stop !");
     }
 }
