@@ -30,7 +30,6 @@ public class SettingsEvent implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        log.info("Click button settings.");
         bk = new Backgrounds();
         frame.setContentPane(bk.getOptions());
         frame.validate();
@@ -58,5 +57,6 @@ public class SettingsEvent implements ActionListener {
         panelExit.add(exit);
 
         frame.validate();
+        log.info("Click button settings.");
     }
 }

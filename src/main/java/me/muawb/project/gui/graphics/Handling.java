@@ -22,24 +22,25 @@ public class Handling {
     }
 
     public void turnOn(JFrame frame){
-        log.debug("Start installing images.");
         back = new Backgrounds();
         try {
             bre = true;
             while (bre) {
                 if (bre == false){
+                    log.debug("Stop installing images !");
                     break;
                 }
                 frame.setContentPane(back.getStart());
                 frame.validate();
                 Thread.sleep(600);
-
+                log.info("Image start.png loaded.");
                 if (bre == false){
                     break;
                 }
                 frame.setContentPane(back.getUnstart());
                 frame.validate();
                 Thread.sleep(600);
+                log.info("Image unstart.png loaded.");
             }
         } catch (InterruptedException e){
             e.printStackTrace();
@@ -52,7 +53,7 @@ public class Handling {
     }
 
     public void update(JFrame frame){
-        log.debug("Start installing images.");
+        log.debug("Start installing images !");
         is = true;
         int n = 17; // количество картинок
         back = new Backgrounds();
@@ -60,7 +61,7 @@ public class Handling {
             switch (i) {
                 case 0:
                     try {
-                        log.debug("image 1 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack());
                         frame.validate();
                         Thread.sleep(2000);
@@ -70,7 +71,7 @@ public class Handling {
                     break;
                 case 1:
                     try {
-                        log.debug("image 2 settings");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack2());
                         frame.validate();
                         Thread.sleep(200);
@@ -80,7 +81,7 @@ public class Handling {
                     break;
                 case 2:
                     try {
-                        log.debug("image 3 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack3());
                         frame.validate();
                         Thread.sleep(200);
@@ -90,7 +91,7 @@ public class Handling {
                     break;
                 case 3:
                     try {
-                        log.debug("image 4 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack4());
                         frame.validate();
                         Thread.sleep(200);
@@ -100,7 +101,7 @@ public class Handling {
                     break;
                 case 4:
                     try {
-                        log.debug("image 5 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack5());
                         frame.validate();
                         Thread.sleep(200);
@@ -110,7 +111,7 @@ public class Handling {
                     break;
                 case 5:
                     try {
-                        log.debug("image 6 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack6());
                         frame.validate();
                         Thread.sleep(200);
@@ -120,7 +121,7 @@ public class Handling {
                     break;
                 case 6:
                     try {
-                        log.debug("image 7 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack7());
                         frame.validate();
                         Thread.sleep(200);
@@ -130,7 +131,7 @@ public class Handling {
                     break;
                 case 7:
                     try {
-                        log.debug("image 8 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack8());
                         frame.validate();
                         Thread.sleep(200);
@@ -140,7 +141,7 @@ public class Handling {
                     break;
                 case 8:
                     try {
-                        log.debug("image 9 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack9());
                         frame.validate();
                         Thread.sleep(200);
@@ -150,7 +151,7 @@ public class Handling {
                     break;
                 case 9:
                     try {
-                        log.debug("image 10 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack10());
                         frame.validate();
                         Thread.sleep(200);
@@ -160,7 +161,7 @@ public class Handling {
                     break;
                 case 10:
                     try {
-                        log.debug("image 11 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack11());
                         frame.validate();
                         Thread.sleep(200);
@@ -170,7 +171,7 @@ public class Handling {
                     break;
                 case 11:
                     try {
-                        log.debug("image 12 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack12());
                         frame.validate();
                         Thread.sleep(200);
@@ -180,7 +181,7 @@ public class Handling {
                     break;
                 case 12:
                     try {
-                        log.debug("image 13 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack13());
                         frame.validate();
                         Thread.sleep(200);
@@ -190,7 +191,7 @@ public class Handling {
                     break;
                 case 13:
                     try {
-                        log.debug("image 14 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack14());
                         frame.validate();
                         Thread.sleep(200);
@@ -200,7 +201,7 @@ public class Handling {
                     break;
                 case 14:
                     try {
-                        log.debug("image 15 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack15());
                         frame.validate();
                         Thread.sleep(200);
@@ -210,7 +211,7 @@ public class Handling {
                     break;
                 case 15:
                     try {
-                        log.debug("image 16 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack16());
                         frame.validate();
                         Thread.sleep(200);
@@ -220,7 +221,7 @@ public class Handling {
                     break;
                 case 16:
                     try {
-                        log.debug("image 17 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack17());
                         frame.validate();
                         Thread.sleep(200);
@@ -230,7 +231,7 @@ public class Handling {
                     break;
                 case 17:
                     try {
-                        log.debug("image 19 setting");
+                        log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack18());
                         frame.validate();
                         Thread.sleep(200);

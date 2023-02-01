@@ -35,7 +35,7 @@ public class WorkWindow {
         frame.setLocationRelativeTo(null);
         frame.setIconImage(new ImageIcon(this.getClass().getResource("/image/icons/icon.png")).getImage());
         frame.setVisible(true);
-        log.info("Frame is created");
+        log.info("Frame is created !");
     }
 
     public JFrame getFrame(){
@@ -47,6 +47,7 @@ public class WorkWindow {
             for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()){
                 if ("Nimbus".equals(info.getName())){
                     UIManager.setLookAndFeel(info.getClassName());
+                    log.info("Set look and fiel: \"Numbus\"");
                 }
             }
         } catch (Exception e){
@@ -59,9 +60,12 @@ public class WorkWindow {
             try {
                 Thread.sleep(1000);
                 play = new Turntable("/sound/vavilov.mp3");
+                log.info("Sound start !");
                 play.play();
                 play.close();
+                log.info("Sound stop !");
             } catch (Exception e) {
+                log.debug("Failed to start the tune!");
                 e.printStackTrace();
             }
         }).start();

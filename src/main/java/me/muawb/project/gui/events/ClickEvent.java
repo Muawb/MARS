@@ -59,7 +59,7 @@ public class ClickEvent implements MouseListener {
                 frame.add(panelNetwork);
                 ic.showNetworkInterfaces(panelNetwork);
                 frame.validate();
-                log.debug("Click frame.");
+                log.debug("Click by frame !");
             }
             stop();
         }
