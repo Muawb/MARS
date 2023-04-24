@@ -2,18 +2,37 @@ package me.muawb.project.gui.components;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+
+/**
+ * This class implements the switch is which happen do replace frame for image.
+ * Contain method for set image.
+ */
 
 public class Backgrounds {
+
+    /**
+     * Anonymous class, in body override of method {@code paintComponent(Graphics)}.
+     * In method set image.
+     */
 
     private JComponent back = new JComponent() {
         @Override
         protected void paintComponent(Graphics g) {
+            //Graphics2D must what be draw.
             Graphics2D g2 = (Graphics2D) g;
+            //Determine and set image.
             Image img = new ImageIcon(this.getClass().getResource("/image/light/back.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            //This we draw.
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
+
+    //etc.
 
     private JComponent back2 = new JComponent() {
         @Override
@@ -21,7 +40,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning1.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -31,7 +53,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning2.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h,null);
         }
     };
 
@@ -41,7 +66,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning3.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h,null);
         }
     };
 
@@ -51,7 +79,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning4.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h,null);
         }
     };
 
@@ -61,7 +92,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning5.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -71,7 +105,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning6.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -81,7 +118,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning7.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -91,7 +131,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning8.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -101,7 +144,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning9.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -111,7 +157,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning10.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -121,7 +170,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning11.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -131,7 +183,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning12.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -141,7 +196,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning13.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -151,7 +209,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning14.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -161,7 +222,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning15.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -171,7 +235,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning16.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -181,7 +248,10 @@ public class Backgrounds {
             Graphics2D g2 = (Graphics2D) g;
             Image img = new ImageIcon(this.getClass().getResource("/image/light/Lightning17.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -189,9 +259,13 @@ public class Backgrounds {
         @Override
         protected void paintComponent(Graphics g) {
             Graphics2D g2 = (Graphics2D) g;
-            Image img = new ImageIcon(this.getClass().getResource("/image/unstart.png")).getImage();
+            Image img = new ImageIcon(this.getClass().getResource(
+                    "/image/backgrounds/russian/unstart.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -199,9 +273,13 @@ public class Backgrounds {
         @Override
         protected void paintComponent(Graphics g) {
             Graphics2D g2 = (Graphics2D) g;
-            Image img = new ImageIcon(this.getClass().getResource("/image/start.png")).getImage();
+            Image img = new ImageIcon(this.getClass().getResource(
+                    "/image/backgrounds/russian/start.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -209,9 +287,13 @@ public class Backgrounds {
         @Override
         protected void paintComponent(Graphics g) {
             Graphics2D g2 = (Graphics2D) g;
-            Image img = new ImageIcon(this.getClass().getResource("/image/wr.png")).getImage();
+            Image img = new ImageIcon(this.getClass().getResource(
+                    "/image/backgrounds/russian/wr.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -219,9 +301,13 @@ public class Backgrounds {
         @Override
         protected void paintComponent(Graphics g) {
             Graphics2D g2 = (Graphics2D) g;
-            Image img = new ImageIcon(this.getClass().getResource("/image/inter.png")).getImage();
+            Image img = new ImageIcon(this.getClass().getResource(
+                    "/image/backgrounds/russian/inter.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 
@@ -229,9 +315,13 @@ public class Backgrounds {
         @Override
         protected void paintComponent(Graphics g) {
             Graphics2D g2 = (Graphics2D) g;
-            Image img = new ImageIcon(this.getClass().getResource("/image/options.png")).getImage();
+            Image img = new ImageIcon(this.getClass().getResource(
+                    "/image/backgrounds/russian/options.png")).getImage();
 
-            g2.drawImage(img, 0, 0, null);
+            int h = getHeight();
+            int w = getWidth();
+
+            g2.drawImage(img, 0, 0, w, h, null);
         }
     };
 

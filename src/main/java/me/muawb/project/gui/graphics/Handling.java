@@ -5,14 +5,36 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import javax.swing.*;
 
+/**
+ * Here has methods for replace frame and stop replace,
+ * method {@link this#turnOn(JFrame)} allows appear and disappear text
+ * for background until user not click about screen.
+ * Have logging.
+ */
+
 public class Handling {
 
+    //Create logging.
     private static final Logger log = LoggerFactory.getLogger(Handling.class);
 
+    //Provide kit a image for replace on frame.
     private Backgrounds back;
 
+    //Determine when can appear text.
+    //If bre equals false, leave from while, and show
+    //network manager menu.
     private boolean bre;
+
+    //Determine know is performed now replace frame or not.
     private boolean is = true;
+
+    /**
+     * This method check, active {@link this#update(JFrame)}
+     * or not.
+     *
+     * @return
+     *      true or false.
+     */
 
     public boolean isActive(){
         if (is == false){
@@ -21,15 +43,28 @@ public class Handling {
         return true;
     }
 
+    /**
+     * Start cycle which replace image on frame.
+     *
+     * @param frame
+     *        main frame.
+     */
+
     public void turnOn(JFrame frame){
+        //Create a new object Backgrounds.
         back = new Backgrounds();
         try {
+            //int type variable set.
             bre = true;
+            //until equals true.
             while (bre) {
+                //if variable 'bre' have value 'false'.
+                //Strop cycle and exit.
                 if (bre == false){
                     log.debug("Stop installing images !");
                     break;
                 }
+                //Set new image background.
                 frame.setContentPane(back.getStart());
                 frame.validate();
                 Thread.sleep(600);
@@ -47,23 +82,42 @@ public class Handling {
         }
     }
 
+    /**
+     * Stop cycle which defined in method {@link this#turnOn(JFrame)}
+     * and exit from it.
+     */
+
     public void stop(){
+        //Set value for variable.
         bre = false;
         log.debug("Stop installing images.");
     }
 
+    /**
+     * Here happens replace image for background in main frame.
+     * Into create cycle for, which do iteration at switch.
+     * In each block switch have set image.
+     * Which cycle for approach in last image, method finished and close.
+     *
+     * @param frame
+     *      main frame.
+     */
+
     public void update(JFrame frame){
         log.debug("Start installing images !");
+        //Set value for variable is true.
         is = true;
-        int n = 17; // количество картинок
+        int n = 17; // Count image.
         back = new Backgrounds();
         for (int i = 0; i <= n; i ++){
             switch (i) {
                 case 0:
                     try {
+                        //Set first image.
                         log.debug("Set image: " + i);
                         frame.setContentPane(back.getBack());
                         frame.validate();
+                        //Wait 2000 milliseconds.
                         Thread.sleep(2000);
                     } catch (InterruptedException e){
                         e.printStackTrace();
@@ -239,6 +293,7 @@ public class Handling {
                         e.printStackTrace();
                     }
                     is = false;
+                    //out of cycle.
                     break;
             }
         }
